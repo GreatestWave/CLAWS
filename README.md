@@ -46,7 +46,7 @@ For this project were used:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-If you would like to get only the game itself you should download .exe release from GitHub. To build project you need to download files and then add them as a new project in Unity.
+If you would like to get only the build itself you should download release from GitHub. To build a Unity project you need to download files and then add them as a new project in Unity.
 
 
 <!-- USAGE EXAMPLES -->
