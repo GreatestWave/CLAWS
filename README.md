@@ -16,9 +16,6 @@ Suchkov Dmitrii
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -49,9 +46,7 @@ For this project were used:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To setup project you need to download this files and then add it as new project in Unity.
-
-
+If you would like to get only the game itself you should download .exe release from GitHub. To build project you need to download files and then add them as a new project in Unity.
 
 
 <!-- USAGE EXAMPLES -->
@@ -82,6 +77,6 @@ Project Link: [https://github.com/GreatestWave/CLAWS](https://github.com/Greates
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-I would like to thank Dr.Louis Nisiotis as my advisor for this project, Vladimir Suchkov for helping me with code and Unity development. Also thank you countless people behind youtube tutorials and Unity forum articles.
+I would like to thank Dr.Louis Nisiotis as my advisor for this project, Vladimir Suchkov for helping me with code and Unity development. Also thank you to countless people behind youtube tutorials and Unity forum articles.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
