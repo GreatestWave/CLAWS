@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine.SceneManagement;
 
 
@@ -8,6 +9,8 @@ public class LoseWin : MonoBehaviour
 {
     public GameObject Player1WinText;
     public GameObject Player2WinText;
+    public GameObject Player1WinImage;
+    public GameObject Player2WinImage;
     public float PauseTime = 1.0f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,7 +35,21 @@ public class LoseWin : MonoBehaviour
             Player2WinText.gameObject.SetActive(true);
             SaveScript.Player2Wins++;
         }
-        yield return new WaitForSeconds(PauseTime);
-        SceneManager.LoadScene(0);
+
+        if (SaveScript.Player1Wins >= 2)
+        {
+            Player1WinImage.gameObject.SetActive(true);
+            SaveScript.TimeOut = true;
+        }
+        else if (SaveScript.Player2Wins >= 2)
+        {
+            Player2WinImage.gameObject.SetActive(true);
+            SaveScript.TimeOut = true;
+        }
+        else
+        {
+            yield return new WaitForSeconds(PauseTime);
+            SceneManager.LoadScene(0);
+        }
     }
 }

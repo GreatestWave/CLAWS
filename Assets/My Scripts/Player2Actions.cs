@@ -74,6 +74,11 @@ public class Player2Actions : MonoBehaviour
                     attackNumberP2 += 50;
                     StartCoroutine(ResetNumber());
                 }
+                
+                if (Input.GetButtonDown("BlockP2"))
+                {
+                    Anim.SetTrigger("BlockOn");
+                }
 
                 if (canAttackP2 == true)
                 {
@@ -119,11 +124,6 @@ public class Player2Actions : MonoBehaviour
                         Anim.SetTrigger("BlockOff");
                         HitsP2 = false;
                     }
-                }
-
-                if (Input.GetButtonDown("Block"))
-                {
-                    Anim.SetTrigger("BlockOn");
                 }
             }
 

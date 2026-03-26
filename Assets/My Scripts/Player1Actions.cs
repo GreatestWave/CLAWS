@@ -81,7 +81,12 @@ public class Player1Actions : MonoBehaviour
                     attackNumber += 50;
                     StartCoroutine(ResetNumber());
                 }
-
+                
+                if (Input.GetButtonDown("Block"))
+                {
+                    Anim.SetTrigger("BlockOn");
+                }
+                
                 if (canAttack == true)
                 {
                     canAttack = false;
@@ -126,11 +131,6 @@ public class Player1Actions : MonoBehaviour
                         Anim.SetTrigger("BlockOff");
                         Hits = false;
                     }
-                }
-
-                if (Input.GetButtonDown("Block"))
-                {
-                    Anim.SetTrigger("BlockOn");
                 }
             }
 
